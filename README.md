@@ -1,7 +1,3 @@
-Here's a README for your project, **WaveType**, structured similarly to your example, including development setup instructions and a section for `kbrd.js` and clean code principles:
-
----
-
 # WaveType 🌊
 
 WaveType helps you type faster on notebooks!  
