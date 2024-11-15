@@ -81,6 +81,7 @@ WaveType is a web platform that enhances typing skills using music and lyrics-ba
 ### Clean Code Principles Applied
 
 In `kbrd.js`, I focused on following clean code principles to make the code easy to maintain. I tried to implement descriptive function names like `initializeKeyboard()` and `startTypingSession()` to make the code self-documenting. Functions are kept small with a single responsibility, such as `fetchLyrics()` for API calls and `renderTypingError()` for handling errors. I also made sure to use appropriate data types, like arrays for key presses and strings for lyrics. Error handling is managed with `try-catch` blocks, and the code behaves predictably to avoid surprises.
+
 ---
 
 ## Development Server Setup
