@@ -1,0 +1,235 @@
+/* html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+} */
+.container-wavetype{
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-areas: 'display'
+                         'keyboard';
+
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.display-start{
+    grid-area: display;
+    z-index: 3;
+
+    height: 50vh;
+    width: 100%;
+    border-radius: 0 0 50px 50px;
+    border-color: black;
+
+    background-color: rgba(0, 0, 0, 0.759);
+    /* background-color: rgb(28, 28, 28); */
+    color: rgb(189, 189, 189);
+    /* color: rgb(82, 125, 255); */
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.typing-start{
+    height: 10%;
+    width: 20%;
+    background-color: #F45959;
+    color: white;
+
+    border: 2px solid #F45959;
+    border-radius: 5px;
+}
+
+button.typing-start:hover{
+    background-color: black;
+    border: 2px solid #F45959;
+    cursor: pointer;
+}
+
+.display{
+    grid-area: display;
+    z-index: 2;
+
+    height: 50vh;
+    width: 100%;
+    border-radius: 0 0 50px 50px;
+    border-color: black;
+    overflow-y: scroll;
+
+    background-color: black;
+    /* background-color: rgb(28, 28, 28); */
+    color: rgb(189, 189, 189);
+    /* color: rgb(82, 125, 255); */
+
+    padding:  50px;
+
+    -webkit-user-select: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+}
+
+.display-text{
+   /* font-size: 10px; */
+   height: 90%;
+   padding: 50px 100px 50px 100px;
+}
+
+.kb-container{
+    grid-area: keyboard;
+
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    background-color: black;
+
+    height: 250px;
+    width: 200px;
+    min-width: 149px;
+    margin: 0 10px 0 20px;
+    padding: 10px 0 10px 0;
+
+
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.search-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 5px;
+}
+
+.inp-search{
+    height: 25px;
+    border: none;
+    border-radius: 19px;
+
+    text-align: center;
+    color: black;
+
+}
+
+.inp-search-btn{
+    border: 2px solid #F45959;
+    border-radius: 50px;
+    background-color: #F45959;
+}
+
+.inp-search-btn:hover{
+    background-color: black;
+    border: 2px solid #F45959;
+    cursor: pointer;
+}
+
+
+.keyboard{
+    background-color: #D9D9D9;
+    /* background-color: rgb(233, 153, 153);
+    background-color: rgb(156, 227, 161); */
+    height: 250px;
+    width: 640px;
+
+    /* height: calc(38px*2);
+    width: calc(38px*2); */
+    border-radius: 16px;
+
+    display: grid;
+    grid-template-rows: repeat(1fr, 5);
+    grid-template-columns: 1fr;
+
+}
+
+.kb-row{
+    display: flex;
+    gap: 4px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.kb-key{
+    background-color: rgb(28, 28, 28);
+    height: 38px;
+    width: 38px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.kb-key-item{
+    background-color: rgb(28, 28, 28);
+    height: 18px;
+    width: 38px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.timer{
+    /* display: none; */
+
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+
+    font-size: 24px;
+
+    color: white;
+    /* background-color: rgb(33, 33, 33); */
+    /* filter: drop-shadow(2px 2px 5px rgb(215, 215, 215)); */
+    /* border-radius: 50%; */
+
+    position: absolute;
+    z-index: 5;
+
+    /* adding feature later */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* -webkit-user-drag: none; */
+    -webkit-user-select: none;
+}
+
+.timer:hover{
+    cursor: grab;
+}
+
+.timer:active{
+    cursor: grabbing;
+}
+

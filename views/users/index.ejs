@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../includes/head.ejs', {title: "Shop | Cookieshop"}) %>
+<body class="nav-header">
+  <%- include('../includes/header.ejs') %>
+
+  <main>
+    <main-container-3>
+      <div class="form-container">
+        <h2>Our current users include:</h2>
+        <ul>
+          <% users.forEach(user => { %>
+            <li>
+                <a class="view-users" href="/users/view/<%= user.slug %>"><%= user.name %>: <%- readableScore(user.score) %></a>
+            </li>
+          <% }) %>
+        </ul>
+      </div>
+    </main-container-3>
+    
+  </main>
+
+  <%- include('../includes/footer.ejs') %>
+</body>
+</html>

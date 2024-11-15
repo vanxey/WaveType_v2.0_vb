@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../includes/head.ejs', {title: "WaveType - Create User"}) %>
+<body class="nav-header">
+  <%- include('../includes/header.ejs') %>
+  
+
+  <main>
+    <main-container-3 class="dark">
+      <div class="form-container">
+        <h2 style="text-align: center;">Create a new user</h2>
+
+        <form action="/users" method="POST">
+          <input class="input-field" type="text" name="slug" placeholder="slug" required /><br />
+          <input class="input-field" type="text" name="name" placeholder="name" required /><br />
+          <input class="input-field" type="number" name="score" placeholder="score" required min="0" step="1" /><br />
+          <button class="input-btn">Save</button>
+        </form>
+      </div>
+    </main-container-3>
+  </main>
+
+  <%- include('../includes/footer.ejs') %>
+</body>
+</html>

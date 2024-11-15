@@ -1,0 +1,37 @@
+{
+  "name": "wavetype_v1.0_vb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "vitest --reporter=verbose --coverage",
+    "e2e": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanxey/WaveType_v1.0_vb.git"
+  },
+  "author": "vanessa büchner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanxey/WaveType_v1.0_vb/issues"
+  },
+  "homepage": "https://github.com/vanxey/WaveType_v1.0_vb#readme",
+  "dependencies": {
+    "@vitest/coverage-v8": "^1.6.0",
+    "cypress": "^13.8.1",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "mockingoose": "^2.16.2",
+    "mongoose": "^8.2.4",
+    "vite": "^5.2.11",
+    "vitest": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

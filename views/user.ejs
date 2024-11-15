@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('includes/head.ejs', {title: "WaveType - User"}) %>
+<body>
+    <%- include('includes/header.ejs') %>
+
+    
+    <main>
+        <div class="div-space"></div>
+        <main-container-3 class="light">
+            <div class="mc3-item">
+                <div class="box-wrapper">
+                    <div class="box-item" onclick="location.href='/users/new'"><a class="box-item-link" href="/users/new">Create</a> </div>
+                    <div class="box-item" onclick="location.href='/users/view'"><a class="box-item-link" href="/users/view">Read</a></div>
+                    <div class="box-item" onclick="location.href='/users/which'"><a class="box-item-link" href="/users/which">Update</a></div>
+                    <div class="box-item" onclick="location.href='/users/which'"><a class="box-item-link" href="/users/which">Delete</a></div>
+                </div>
+            </div>
+        </main-container-3>
+        <div class="div-space"></div>
+    </main>
+    <%- include('includes/footer.ejs') %>
+    
+    <!-- <script>confirm('Select a CRUD operation')</script> -->
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../includes/head.ejs', {title: "Edit User | WaveType"}) %>
+<body class="nav-header">
+  <%- include('../includes/header.ejs') %>
+
+  <main>
+    <main-container-3>
+      <div class="form-container">
+        <h2>Edit a user</h2>
+
+      <form action="/users/<%= user.slug %>" method="POST">
+        <input class="input-field" type="text" value="<%= user.name %>" name="name" placeholder="name" /><br />
+        <input class="input-field" type="text" value="<%= user.slug %>" name="slug" placeholder="slug" /><br />
+        <input class="input-field" type="number" value="<%= user.score %>" name="score" placeholder="score" /><br />
+        <button class="input-btn">Save</button>
+      </form>
+      </div>
+    </main-container-3>
+    
+  </main>
+
+  <%- include('../includes/footer.ejs') %>
+</body>
+</html>

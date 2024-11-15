@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "661e6a72bb74310d9a66a746",
+    "slug": "James-Hetfield",
+    "name": "James Hetfield",
+    "score": 500,
+    "__v": 0
+  },
+  {
+    "_id": "661e6c134f9f32ca6fce5071",
+    "slug": "Kirk-Hammett",
+    "name": "Kirk Hammett",
+    "score": 499,
+    "__v": 0
+  },
+  {
+    "_id": "661e73731b77983241d05c38",
+    "slug": "Lars-Ulrich",
+    "name": "Lars Ulrich",
+    "score": 498,
+    "__v": 0
+  },
+  {
+    "_id": "67351c894aa29d5b90cadbaf",
+    "slug": "test",
+    "name": "test",
+    "score": "30",
+    "__v": 0
+  }
+]
