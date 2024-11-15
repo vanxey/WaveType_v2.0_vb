@@ -72,8 +72,6 @@ WaveType is a web platform that enhances typing skills using music and lyrics-ba
 
 ---
 
-## `kbrd.js` - Clean Code Principles
-
 ### Overview of `kbrd.js`
 
 `kbrd.js` is a module responsible for the interactive typing functionality of WaveType. It handles interactions such as simulating a digital keyboard, managing user input, tracking errors, and fetching lyrics from the Musixmatch API.
