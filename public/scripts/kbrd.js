@@ -5,11 +5,6 @@ const KEYBOARD = document.querySelector('.keyboard');
 const TYPING_START_BUTTON = document.querySelector('.typing-start');
 const TIMER_DISPLAY = document.querySelector('.timer');
 
-if (!DISPLAY) {
-    console.error('Display element not found!');
-    return;
-}
-
 // Default fetched lyrics message if no lyrics are present
 let fetchedLyrics = document.querySelector('.lyrics-span').innerText;
 if (!fetchedLyrics) {
@@ -219,4 +214,12 @@ TYPING_START_BUTTON.addEventListener('click', () => {
         document.body.addEventListener('keyup', handleKeyUp);
     }, 100);
 });
+
+setTimeout(() => {
+    if (!DISPLAY) {
+        console.error('Display element not found!');
+        return;
+    }
+}, 1000);
+
 
